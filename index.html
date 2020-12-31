@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const code = urlParams.get("code");
+      if (code) {
+        window.location.replace(`https://t.me/planmetricsbot?start=${code}`);
+      } else {
+        window.location.replace(`https://ahmadalli.rocks`);
+      }
+    </script>
+  </head>
+</html>
